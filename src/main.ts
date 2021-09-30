@@ -1,7 +1,6 @@
-
         let a: number = 5;
         let b: number = 5;
-        let c: number = 3;
+        let c: number = 4;
         if (((a == b)  && (b == c))) {
             console.log(3);
         }
@@ -10,6 +9,7 @@
         }
         else {
             console.log(0);
+
         }
         
     
