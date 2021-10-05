@@ -9,7 +9,6 @@
         }
         else {
             console.log(0);
-
         }
         
     
