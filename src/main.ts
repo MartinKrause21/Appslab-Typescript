@@ -1,8 +1,8 @@
-let a: number = 2;
-let b: number = 3;
-let c: number = 4;  
+let TotalSlices: number = 8;
+let NoRecipients: number = 3;
+let SlicesEach: number = 3;  
 
-if (a + b > c && b + c > a && a + c > b ) {
+if (NoRecipients*SlicesEach <= TotalSlices) {
     console.log(true);
 }
 
