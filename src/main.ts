@@ -1,17 +1,19 @@
-let a:string = "laafaal"
 
-function checkPalindrome (b:string){
-const reversestring = b.split ('').reverse().join('');
+function RPS (a:string, b:string) {
+if (a == "scissors" && b == "paper" || a == "rock" && b=="scissors" || a=="paper" && b=="rock") {
 
-
-if (b = reversestring) {
-
-    console.log ("It is palindrome");
+console.log("Player 1 win");
 }
 
-else 
-console.log ("It is not palindrome");
+else if (a == "rock" && b == "paper" || a == "scissors" && b=="rock" || a=="paper" && b=="scissors"){
 
+console.log("Player 2 win");
 }
 
-checkPalindrome (a);
+else {
+console.log("TIE");
+}
+
+} 
+
+RPS ("rock", "paper");
