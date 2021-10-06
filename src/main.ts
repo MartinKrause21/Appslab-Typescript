@@ -1,19 +1,4 @@
-let a:number[]=new Array(1,2,5,7,9)
-let result:number[]=new Array();
-
-
-function mbl (b : number[]){
-
-    for (let i = 0; i < b.length; i++) {
-
-        result.push(b[i]*b.length)
-    
-    }
-
-    console.log(result);
-
+function totalDistance (heightOfStep : number, lenghtOfStep : number, towerHeight : number) {
+    console.log ((towerHeight / heightOfStep) * (lenghtOfStep + heightOfStep));
 }
-
-        
-
-mbl(a);
+totalDistance(0.3, 0.2, 25.0);
