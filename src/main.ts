@@ -1,23 +1,16 @@
-let a:number[]=new Array(2, 8, 7, 5);
-let oddSum = 0;
-let evenSum = 0;
+import { createModuleResolutionCache } from "typescript";
 
-function warOddEven(a:number[]){
-    for(let i=0;i<a.length;i++){
-
-        if(a[i]%2 != 0){
-            oddSum += a[i]
-        }
-        else{
-            evenSum += a[i]
-        }
-    }
-    if(evenSum>oddSum)
+function CaptureTheRook(rook:string[]){
+    if(rook[0].charAt(0) == rook[1].charAt(0) || rook[0].charAt(1) == rook[1].charAt(1))
     {
-        console.log(evenSum-oddSum);
+        return true;
     }
     else{
-        console.log(oddSum-evenSum);
+        return false;
     }
 }
-warOddEven(a);
+var rooks1:string[] = ["A8", "E8"];
+var rooks2:string[] = ["B6", "A1"];
+
+ console.log("Result is: "+CaptureTheRook(rooks1));
+ console.log("Result is: "+CaptureTheRook(rooks2));
