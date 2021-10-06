@@ -1,19 +1,8 @@
+let a:number[] = new Array ( 44, 32, 86, 19, 60);
 
-function RPS (a:string, b:string) {
-if (a == "scissors" && b == "paper" || a == "rock" && b=="scissors" || a=="paper" && b=="rock") {
+function differenceMinMax (a:number[]) {
 
-console.log("Player 1 win");
+console.log (Math.abs (a[a.length -1])-Math.abs(a[0]));
+
 }
-
-else if (a == "rock" && b == "paper" || a == "scissors" && b=="rock" || a=="paper" && b=="scissors"){
-
-console.log("Player 2 win");
-}
-
-else {
-console.log("TIE");
-}
-
-} 
-
-RPS ("rock", "paper");
+differenceMinMax (a);
