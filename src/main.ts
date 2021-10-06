@@ -1,8 +1,27 @@
-let a:number[] = new Array ( 44, 32, 86, 19, 60);
+let a:number[] = new Array ( 2, 8, 7, 5);
 
-function differenceMinMax (a:number[]) {
+let oddSum = 0;
+let evenSum = 0; 
 
-console.log (Math.abs (a[a.length -1])-Math.abs(a[0]));
+function warOddEven (a:number[]) {
 
+
+    for (let i = 0; i < a.length; i++) {
+        if (a[i] % 2 != 0) {
+            oddSum = evenSum + a[i];
+        }
+
+        else {
+            evenSum = evenSum + a[i];
+        }
+
+    }
+    if (evenSum > oddSum) {
+        console.log(oddSum);
+    }
+    else {
+        console.log(evenSum);
+    }
 }
-differenceMinMax (a);
+
+warOddEven (a);
