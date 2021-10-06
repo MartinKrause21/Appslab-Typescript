@@ -1,4 +1,17 @@
-function totalDistance (heightOfStep : number, lenghtOfStep : number, towerHeight : number) {
-    console.log ((towerHeight / heightOfStep) * (lenghtOfStep + heightOfStep));
+let a:string = "laafaal"
+
+function checkPalindrome (b:string){
+const reversestring = b.split ('').reverse().join('');
+
+
+if (b = reversestring) {
+
+    console.log ("It is palindrome");
 }
-totalDistance(0.3, 0.2, 25.0);
+
+else 
+console.log ("It is not palindrome");
+
+}
+
+checkPalindrome (a);
